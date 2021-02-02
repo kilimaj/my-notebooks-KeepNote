@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<node>
+<version>6</version>
+<dict>
+  <key>title</key><string>black-screen kali after upgrade</string>
+  <key>nodeid</key><string>cf6c9769-7190-477f-968b-f9b3ca6072c2</string>
+  <key>modified_time</key><integer>1612276976</integer>
+  <key>version</key><integer>6</integer>
+  <key>content_type</key><string>text/xhtml+xml</string>
+  <key>created_time</key><integer>1612258834</integer>
+  <key>order</key><integer>1</integer>
+  <key>icon</key><string>check.png</string>
+</dict>
+</node>

@@ -13,13 +13,15 @@
       </array>
     </dict>
   </array>
-  <key>expanded</key><false/>
-  <key>title</key><string>linux</string>
+  <key>expanded</key><true/>
   <key>nodeid</key><string>303c66d2-fb8b-434a-afcb-03f5e3e2e668</string>
   <key>modified_time</key><integer>1612258266</integer>
+  <key>content_type</key><string>application/x-notebook-dir</string>
+  <key>created_time</key><integer>1612258266</integer>
+  <key>title</key><string>linux</string>
   <key>column_widths</key><dict>
     <key>created_time</key><integer>150</integer>
-    <key>modified_time</key><integer>1021</integer>
+    <key>modified_time</key><integer>1025</integer>
     <key>title</key><integer>150</integer>
   </dict>
   <key>attr_defs</key><array>
@@ -115,8 +117,6 @@
     </dict>
   </array>
   <key>version</key><integer>6</integer>
-  <key>content_type</key><string>application/x-notebook-dir</string>
-  <key>created_time</key><integer>1612258266</integer>
   <key>order</key><integer>0</integer>
 </dict>
 </node>
