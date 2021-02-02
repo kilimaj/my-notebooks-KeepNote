@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Users and privileges</title>
+</head><body>ls -la <br/>
+<br/>
+at start if - its a file if d its a directory then follows permissions<br/>
+<br/>
+r - read - 4<br/>
+w - write - 2<br/>
+x - execute - 1<br/>
+<br/>
+eg drwx-xr-x this specifies owner, group and others permissions <br/>
+<br/>
+chmod : changes user privileges<br/>
+chmod 777 hello.txt <br/>
+<br/>
+adduser john<br/>
+<br/>
+creates neew user named john<br/>
+<br/>
+cat /etc/passwd : this file shows user details<br/>
+<br/>
+cat /etc/shadow : This is where hashed values of passwords are stored.<br/>
+<br/>
+su john : switch to user john su - will switch to root.<br/>
+<br/>
+sudo, sudoers file any user who is in the file can execute privileged commands and access files with higher privilege (some roots privilege) using sudo before the command.</body></html>
