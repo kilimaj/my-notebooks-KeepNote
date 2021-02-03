@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>bash scripting</title>
+</head><body>ping commands and information <br/>
+<ul><li style="list-style-type: none">ping 192.209.3.1 -c 1 &gt; ip.txt </li>
+<li style="list-style-type: none"></li>
+<li style="list-style-type: none">the above command pings and save output to file ip.txt</li>
+<li style="list-style-type: none"></li>
+<li style="list-style-type: none">cat ip.txt | grep "64 bytes"</li>
+<li style="list-style-type: none">This comand returns sentences with 64 bytes in it</li>
+<li style="list-style-type: none"></li>
+<li style="list-style-type: none"></li>
+<li style="list-style-type: none">cat ip.txt | grep "64 bytes" | cut -d " " -f 4 | tr -d ":"</li>
+<li style="list-style-type: none">the command cuts 4 spaces and grab the string to the next space i.e. -d stands for delimiter and -f for field</li>
+<li style="list-style-type: none"></li>
+<li style="list-style-type: none">As for tr means trim since the output has a : at the end hence removes it at delimeter :</li>
+<li style="list-style-type: none"></li>
+<li style="list-style-type: none"></li>
+<li style="list-style-type: none">that whole command can be run as a script statement</li>
+</ul>
+<br/>
+creating the script using mousepad<ul><li style="list-style-type: none">mousepad ipsweep.sh</li>
+</ul>
+Inside the file declare the shell used and its location<ul><li style="list-style-type: none">#!/bin/bash</li>
+<li style="list-style-type: none"></li>
+<li style="list-style-type: none">if [ "$1" == "" ]</li>
+<li style="list-style-type: none">then</li>
+<li style="list-style-type: none">echo "You forgot an Ip address!"</li>
+<li style="list-style-type: none">echo "Syntax: ./ipsweep.sh 192.168.4"</li>
+<li style="list-style-type: none"></li>
+<li style="list-style-type: none">else</li>
+<li style="list-style-type: none">for ip in `seq 1 254`; do</li>
+<li style="list-style-type: none">ping -c 192.168.4.$ip | grep "64 bytes" | cut -d " " -f 4 | tr -d ":" &amp;</li>
+<li style="list-style-type: none">done</li>
+<li style="list-style-type: none">fi</li>
+<li style="list-style-type: none"></li>
+</ul>
+&amp; does the for loop multiple instance of the for loop at once unlike ; which is slow<br/>
+The script above for loop starts at 1 to 254 and can be run as ./ipsweep.sh also at the ip address can make a placeholder as in $1.$ip allowing you to enter the required value at run time<br/>
+<br/>
+therfore the arguments <br/>
+./ipsweep.sh is argument o i.e.<br/>
+./ipsweep.sh $1 $2 etc.<br/>
+./ipsweep.sh 192.168.4<br/>
+<br/>
+In general that small script returns all connected devices within the network since it will return all that has accepted the ping command.<br/>
+<br/>
+some more automation <br/>
+<br/>
+./ipsweep.sh 192.168.4 &gt; ips.txt<br/>
+<br/>
+for ip in $(cat ips.txt); do nmap $ip; done <br/>
+<br/>
+the above script will do nmap ports scan for all<br/>
+<br/>
+</body></html>
