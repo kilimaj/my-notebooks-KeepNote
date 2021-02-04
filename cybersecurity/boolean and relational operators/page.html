@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>boolean and relational operators</title>
+</head><body>!#/bin/python3<br/>
+<br/>
+# Boolean expressions (True or False)<br/>
+print("Boolean expressions:")<br/>
+<br/>
+bool1 = True<br/>
+bool2 = 3*3 == 9<br/>
+bool3 = False<br/>
+bool4 = 3*3 != 9<br/>
+<br/>
+print (bool1, bool2, bool3, bool4)<br/>
+print(type(bool1))<br/>
+<br/>
+bool5 = "True"<br/>
+print(type(bool5)) # this will show string type not boolean<br/>
+<br/>
+print('\n')<br/>
+<br/>
+# Relational and Boolean operators<br/>
+greater_than = 7 &gt; 5<br/>
+less_than = 5 &lt; 7<br/>
+greater_than_equal_to = 7 &gt;= 7<br/>
+less_than_equal_to = 7 &lt;= 7<br/>
+# all return true<br/>
+<br/>
+test_and = (7 &gt; 5) and (5 &lt; 7) #True since both are true<br/>
+test_and2 = (7 &gt; 5) and (5 &gt; 7) #False since both have to be true<br/>
+test_and3 = (7 &gt; 5) or (5 &gt; 7) #True since either can be true<br/>
+test_and4 = (7 &gt; 5) or (5 &lt; 7) #True since since both or either can be true<br/>
+<br/>
+google true false charts images called truth table<br/>
+<br/>
+</body></html>
