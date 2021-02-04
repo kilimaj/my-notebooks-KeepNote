@@ -35,7 +35,7 @@ Inside the file declare the shell used and its location<ul><li style="list-style
 <li style="list-style-type: none">ping -c 192.168.4.$ip | grep "64 bytes" | cut -d " " -f 4 | tr -d ":" &amp;</li>
 <li style="list-style-type: none">done</li>
 <li style="list-style-type: none">fi</li>
-<li style="list-style-type: none"></li>
+<li style="list-style-type: none">n</li>
 </ul>
 &amp; does the for loop multiple instance of the for loop at once unlike ; which is slow<br/>
 The script above for loop starts at 1 to 254 and can be run as ./ipsweep.sh also at the ip address can make a placeholder as in $1.$ip allowing you to enter the required value at run time<br/>

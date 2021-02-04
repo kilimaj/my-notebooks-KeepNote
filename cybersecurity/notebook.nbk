@@ -76,7 +76,7 @@
                         <string>e3bbfe94-12cd-4b94-94fa-3c3d4190f003</string>
                     </array>
                     <key>selected_listview_nodes</key><array>
-                        <string>e3bbfe94-12cd-4b94-94fa-3c3d4190f003</string>
+                        <string>227e22d0-ad8e-4274-b16a-fdd8f466b827</string>
                     </array>
                 </dict>
                 <key>9f68af79-b79f-48e9-b335-9779e90059dc</key><dict>
@@ -87,6 +87,7 @@
                             <key>name</key><string></string>
                         </dict>
                     </array>
+                    <key>current_viewer</key><string>7bb505b3-4fff-4ead-bd29-50243fee12c7</string>
                 </dict>
             </dict>
         </dict>

@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>variables and methods</title>
+</head><body>gedit script.py&amp;<br/>
+create script file with below contents<br/>
+<br/>
+<br/>
+#!/bin/python3<br/>
+<br/>
+# Variables and Methods<br/>
+quote = "This is a beautiful quote from me"<br/>
+print(quote)<br/>
+<br/>
+#Methods<br/>
+print(quote.lower())<br/>
+print(quote.title())<br/>
+print(quote.upper())<br/>
+<br/>
+print(len(quote))<br/>
+<br/>
+name = "John" #string<br/>
+age = 30 #int - int(30) this casts to integer and does not round<br/>
+gpa = 3.7 #float - float(3.7)<br/>
+<br/>
+print(int(age))<br/>
+print(int(30.9))<br/>
+<br/>
+#print("My name is " + name + " and I am " + age + " years old.")<br/>
+Error can not concatenate a string with an integer age<br/>
+<br/>
+print("My name is " + name + " and I am " + str(age) + " years old.")<br/>
+<br/>
+age +=1<br/>
+print(age)<br/>
+<br/>
+birthday = 1<br/>
+age += birthday<br/>
+print(age)<br/>
+</body></html>
