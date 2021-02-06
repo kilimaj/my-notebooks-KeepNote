@@ -1,0 +1,32 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>conditional statements</title>
+</head><body>#!/bin/python3<br/>
+<br/>
+#Conditions statements<br/>
+<br/>
+def drink(money):<br/>
+&nbsp; &nbsp; if money &gt;= 2:<br/>
+&nbsp; &nbsp; &nbsp; &nbsp; return "You've got yourself a drink!"<br/>
+&nbsp; &nbsp; else:<br/>
+&nbsp; &nbsp; &nbsp; &nbsp; return "No drink for you"<br/>
+<br/>
+print(drink(3))<br/>
+print(drink(1))<br/>
+<br/>
+def alcohol (age, money)<br/>
+&nbsp; &nbsp; if (age &gt;= 21) and (money &gt;=5):<br/>
+&nbsp; &nbsp; &nbsp; &nbsp; return "Were getting a drink"<br/>
+&nbsp; &nbsp; elif (age &gt;= 21) and (money &lt; 5):<br/>
+&nbsp; &nbsp; &nbsp; &nbsp; return "Come back with more money"<br/>
+&nbsp; &nbsp; if (age &lt; 21) and (money &gt;=5):<br/>
+&nbsp; &nbsp; &nbsp; &nbsp; return "Nice try kid"<br/>
+&nbsp; &nbsp; else:<br/>
+&nbsp; &nbsp; &nbsp; &nbsp; return "Youre too poor and too young"<br/>
+<br/>
+print(drink(21, 5))<br/>
+print(drink(21, 4))<br/>
+print(drink(20, 4))<br/>
+</body></html>
