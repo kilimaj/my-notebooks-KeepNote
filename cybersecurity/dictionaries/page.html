@@ -1,0 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>dictionaries</title>
+</head><body>#!/bin/python3<br/>
+<br/>
+# Dictionaries - key:value pairs {}<br/>
+<br/>
+drinks = {"White Russian": 7, "Old Fashion": 10, "Lemon Drop": 8} #drink is key and price is value<br/>
+print(drinks)<br/>
+<br/>
+employees = {"Finance": ["Bob", "Linda", "Tina"], "IT": ["Gene", "Louise", "Teddy"], "HR": ["Jimmy", "John"]}<br/>
+<br/>
+print(employees)<br/>
+<br/>
+employees['Legal'] = ["Mr. John"] #add a new key :value pair<br/>
+<br/>
+print(employees)<br/>
+<br/>
+employees.update({"Sales": ["John", "Noella"]}) #add a new key :value pair<br/>
+<br/>
+print(employees)<br/>
+<br/>
+drinks['White Russian'] = 8<br/>
+<br/>
+print(drinks)<br/>
+<br/>
+print(drinks.get("White Russian"))<br/>
+<br/>
+</body></html>
