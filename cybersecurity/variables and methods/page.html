@@ -38,4 +38,36 @@ print(age)<br/>
 birthday = 1<br/>
 age += birthday<br/>
 print(age)<br/>
-</body></html>
+<br/>
+<br/>
+# Advanced strings <br/>
+my_name = "John Kilima"<br/>
+<br/>
+print(my_name.split()) #breaks sentece at delimiter which in this case is a space in which forming a list of words<br/>
+<br/>
+sentence = "This is a ve ry long statement I made personally"<br/>
+<br/>
+sentence_split = sentence.split()<br/>
+sentence_join = ' '.join(sentence_split) #Wherever there is a word put a space between and join.<br/>
+print(sentence_join)<br/>
+<br/>
+#How to add quotation marks in strings using character escaping \<br/>
+quote = "She said, 'where is the cake' "<br/>
+quote_second = "She said, \"where is the cake\" "<br/>
+<br/>
+print(quote)<br/>
+print(quote_second)<br/>
+<br/>
+too_much_space = " &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; hello"<br/>
+print(too_much_space.strip())<br/>
+<br/>
+print("A" in "Apple") #True<br/>
+print("a" in "Apple") #False<br/>
+<br/>
+letter = "A"<br/>
+word = "Apple"<br/>
+print(letter.lower() in word.lower()) # Improved and returns true<br/>
+<br/>
+movie = "The Hangover"<br/>
+<br/>
+print("My favourite movie is {}.".format(movie))</body></html>
