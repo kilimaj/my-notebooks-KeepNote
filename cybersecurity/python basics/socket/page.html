@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>socket</title>
+</head><body>Used to connect two nodes together<br/>
+<br/>
+Used to connect to ports when scanning.<br/>
+<br/>
+gedit s.py&amp; <br/>
+Warning!!!! dont call it socket.py you will run into issues<br/>
+<br/>
+#!/bin/python3<br/>
+<br/>
+import socket<br/>
+<br/>
+HOST = '127.0.0.1'<br/>
+PORT = 7777<br/>
+<br/>
+s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)<br/>
+<br/>
+s.connect((HOST, PORT))<br/>
+<br/>
+go to terminal <br/>
+nc -nvlp 7777 <br/>
+<br/>
+The above netcat cmd listens to any connections on port 7777<br/>
+<br/>
+open another terminal <br/>
+python3 s.py<br/>
+<br/>
+ncat shows connection<br/>
+<br/>
+</body></html>

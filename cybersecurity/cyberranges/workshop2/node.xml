@@ -2,14 +2,14 @@
 <node>
 <version>6</version>
 <dict>
-  <key>title</key><string>workshop4</string>
-  <key>nodeid</key><string>a9431278-f8be-4659-98c5-48052ab739df</string>
-  <key>modified_time</key><integer>1612292618</integer>
+  <key>title</key><string>workshop2</string>
+  <key>nodeid</key><string>43d7c091-3ae4-424e-b76d-8f99961a069b</string>
+  <key>modified_time</key><integer>1612288691</integer>
   <key>version</key><integer>6</integer>
   <key>content_type</key><string>text/xhtml+xml</string>
-  <key>created_time</key><integer>1612289750</integer>
+  <key>created_time</key><integer>1612288691</integer>
   <key>info_sort_dir</key><integer>1</integer>
-  <key>order</key><integer>6</integer>
+  <key>order</key><integer>3</integer>
   <key>info_sort</key><string>order</string>
   <key>icon</key><string>important.png</string>
 </dict>
