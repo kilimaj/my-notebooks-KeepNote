@@ -2,6 +2,7 @@
 <node>
 <version>6</version>
 <dict>
+  <key>expanded</key><false/>
   <key>title</key><string>python basics</string>
   <key>nodeid</key><string>a7f98f2a-112c-4b93-9ab6-016e63826d8e</string>
   <key>modified_time</key><integer>1612405691</integer>
